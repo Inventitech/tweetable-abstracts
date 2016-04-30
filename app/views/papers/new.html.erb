@@ -1,0 +1,40 @@
+<h1>SCAM 2016 Twitter Submission Page</h1>
+<p>As the Tweeting Conference, SCAM'16 encourages authors to supply tweetable material as part of
+  their submission. This will increase the visibility of the authors' work to a broader academic
+  and non-academic audience
+  than the physical conference attendees. </p>
+
+<%= form_for :paper, url: papers_path  do |f| %>
+<table>
+  <tr><td><%= f.label :paperid %></td><td><%= f.label :secr %></td></tr>
+  <tr><td><%= f.text_field :paperid %></td><td><%= f.text_field :secr %></td></tr>
+  </table>
+
+<p>A very short abstract of your paper in max 140 chars. (Mandatory)</p>
+
+  <p>
+    <%= f.label :abstract %><br>
+    <%= f.text_area :abstract, cols: "50", rows: "4", maxlength: "140" %>
+  </p>
+
+<p>At least one controversial statement from your paper that should start a discussion among
+  Twitter followers. Max 140 chars. (1 Mandatory)</p>  
+  <p>
+    <%= f.label :controvserse1 %><br>
+    <%= f.text_area :controvserse1, cols: "50", rows: "4", maxlength: "140" %>
+  </p>
+  
+  <p>
+    <%= f.label :controvserse2 %><br>
+    <%= f.text_area :controvserse2, cols: "50", rows: "4", maxlength: "140" %>
+  </p>
+
+  <p>
+    <%= f.label :controvserse3 %><br>
+    <%= f.text_area :controvserse3, cols: "50", rows: "4", maxlength: "140" %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

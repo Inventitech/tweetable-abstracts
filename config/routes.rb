@@ -26,6 +26,8 @@ Rails.application.routes.draw do
   #     end
   #   end
 
+  resources :papers
+  
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
