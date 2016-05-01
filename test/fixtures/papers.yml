@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  paperid: MyString
+  secr: MyString
+  abstract: MyText
+  controverse1: MyText
+  controverse2: MyText
+  controverse3: MyText
+
+two:
+  paperid: MyString
+  secr: MyString
+  abstract: MyText
+  controverse1: MyText
+  controverse2: MyText
+  controverse3: MyText
