@@ -3,6 +3,7 @@ class CreatePapers < ActiveRecord::Migration
     create_table :papers do |t|
       t.string :paperid
       t.string :secr
+      t.string :email
       t.text :abstract
       t.text :controverse1
       t.text :controverse2

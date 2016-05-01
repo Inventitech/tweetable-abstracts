@@ -1,11 +1,5 @@
 <h1>SCAM 2016 Twitter Submission Page</h1>
-<p>As the Tweeting Conference, SCAM'16 experiments with tweeting short appetizers that should
-  encourage people to read and interact with the authors of the paper. It therefore encourages
-  authors to supply tweetable material as part of their submission. This will increase the
-  visibility of the authors' work to a broader academic and non-academic audience than the physical
-  conference attendees. While the SCAM conference account will tweet your statements, please note
-  that you are responsible for their content, and a link to your preprint will mark them as
-  such.</p>
+<p>Create new paper ID</p>
 
 <% if @paper.errors.any? %>
     <div id="error_explanation">
@@ -22,33 +16,17 @@
   <% end %>
 
 <%= form_for :paper, url: papers_path  do |f| %>
-<%= f.hidden_field :paperid %>
-<%= f.hidden_field :secr %>
-
-<p>A very short abstract of your paper in max 115 chars. (Mandatory)</p>
 
   <p>
-    <%= f.label :abstract %><br>
-    <%= f.text_area :abstract, cols: "50", rows: "4", maxlength: "115" %>
+    <%= f.label :paperid %><br>
+    <%= f.text_field :paperid %>
   </p>
 
-<p>At least one controversial statement from your paper that should start a discussion among
-  Twitter followers. A link to your preprint will be included automatically. Max 115 chars. (1 Mandatory)</p>  
-  <p>
-    <%= f.label :controverse1 %><br>
-    <%= f.text_area :controverse1, cols: "50", rows: "4", maxlength: "115" %>
+    <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
   </p>
-  
-  <p>
-    <%= f.label :controverse2 %><br>
-    <%= f.text_area :controverse2, cols: "50", rows: "4", maxlength: "115" %>
-  </p>
-
-  <p>
-    <%= f.label :controverse3 %><br>
-    <%= f.text_area :controverse3, cols: "50", rows: "4", maxlength: "115" %>
-  </p>
-  
+ 
   <p>
     <%= f.submit %>
   </p>

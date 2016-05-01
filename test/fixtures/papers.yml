@@ -3,6 +3,7 @@
 one:
   paperid: MyString
   secr: MyString
+  email: MyString
   abstract: MyText
   controverse1: MyText
   controverse2: MyText
@@ -11,6 +12,7 @@ one:
 two:
   paperid: MyString
   secr: MyString
+  email: MyString
   abstract: MyText
   controverse1: MyText
   controverse2: MyText

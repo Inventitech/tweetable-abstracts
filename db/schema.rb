@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160430170130) do
+ActiveRecord::Schema.define(version: 20160501123210) do
 
   create_table "papers", force: :cascade do |t|
     t.string   "paperid"
     t.string   "secr"
+    t.string   "email"
     t.text     "abstract"
     t.text     "controverse1"
     t.text     "controverse2"
