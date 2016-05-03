@@ -4,6 +4,7 @@ class CreatePapers < ActiveRecord::Migration
       t.string :paperid
       t.string :secr
       t.string :email
+      t.string :preprint
       t.text :abstract
       t.text :controverse1
       t.text :controverse2

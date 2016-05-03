@@ -4,6 +4,7 @@ one:
   paperid: MyString
   secr: MyString
   email: MyString
+  preprint: MyString
   abstract: MyText
   controverse1: MyText
   controverse2: MyText
@@ -13,6 +14,7 @@ two:
   paperid: MyString
   secr: MyString
   email: MyString
+  preprint: MyString
   abstract: MyText
   controverse1: MyText
   controverse2: MyText

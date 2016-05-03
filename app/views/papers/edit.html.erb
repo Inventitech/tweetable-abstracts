@@ -21,9 +21,9 @@
     </div>
   <% end %>
 
-<%= form_for :paper, url: papers_path(@paper), method: :patch  do |f| %>
+<%= form_for :paper, url: paper_path(@paper), method: :patch  do |f| %>
 <%= f.hidden_field :paperid %>
-<%= f.hidden_field :secr %>
+<input type="hidden" value="<%= secr %>" name="secr" id="secr" />
 <%= f.hidden_field :email %>
 
 <p>A very short abstract of your paper in max 115 chars. (Mandatory)</p>

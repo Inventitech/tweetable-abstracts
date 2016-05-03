@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   #     end
   #   end
 
-  resources :papers
+  resources :papers, param: :paperid
   
   # Example resource route with sub-resources:
   #   resources :products do
