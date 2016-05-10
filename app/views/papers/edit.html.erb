@@ -26,6 +26,12 @@
 <input type="hidden" value="<%= secr %>" name="secr" id="secr" />
 <%= f.hidden_field :email %>
 
+<p>A URL to the preprint of your paper. We automatically add it to the end of your abstract/statements, with a space. (Mandatory)</p>
+  <p>
+    <%= f.label :preprint %><br>
+    <%= f.text_field :preprint, :size=>"80" %>
+  </p>
+
 <p>A very short abstract of your paper in max 115 chars. (Mandatory)</p>
 
   <p>

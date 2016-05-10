@@ -39,7 +39,7 @@ class PapersController < ApplicationController
 
   private
     def insert_params
-      params.require(:paper).permit(:paperid, :secr, :abstract, :controverse1, :controverse2, :controverse3)
+      params.require(:paper).permit(:paperid, :secr, :preprint, :abstract, :controverse1, :controverse2, :controverse3)
     end
 
     def check_secr(secr)
